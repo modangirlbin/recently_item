@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import FootBtn from './components/FootBtn';
 import FootPolicy from './components/FootPolicy';
 import BarUtil from './components/BarUtil';
