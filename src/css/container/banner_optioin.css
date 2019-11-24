@@ -16,7 +16,7 @@
     overflow: hidden;
     display: inline-block;
     background-repeat: no-repeat;
-    /* background-image: url(../img/common/cjmall/m/sp_ico_fn.png); */
+    /* background-image: url(../img/common/cjmall/m/); */
     -webkit-background-size: 62px auto;
     background-size: 62px auto;
     overflow: hidden;
@@ -30,7 +30,7 @@
     overflow: hidden;
     display: inline-block;
     background-repeat: no-repeat;
-    /* background-image: url(../img/common/cjmall/m/sp_ico_fn.png); */
+    background-image: url(../../img/common/sp_ico_fn.png);
     -webkit-background-size: 62px auto;
     background-size: 62px auto;
     overflow: hidden;

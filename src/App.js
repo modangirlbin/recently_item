@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Containers from './components/containers/Containers';
+import ContainerTemplate from './components/container/ContainerTemplate';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header/>
-        <Containers/>
+        <ContainerTemplate/>
+        <Footer/>
       </div>
     );
   }

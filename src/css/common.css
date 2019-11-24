@@ -142,3 +142,94 @@ body,button,h1,h2,h3,h4,h5,h6,input,select,table,textarea {
 ._simpleLoadingBar._fixed {
     position: fixed
 }
+
+.u_chkbx label:after,.u_chkbx_b label:after,.u_chkbx_sub label:after {
+    display: inline-block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    content: '';
+    background-image: url(../img/sp_chk.png);
+    -webkit-background-size: 162px auto;
+    background-size: 162px auto
+}
+
+.u_chkbx,.u_chkbx_b,.u_chkbx_sub {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.8rem;
+    height: 2.4rem;
+    font-size: 0;
+    line-height: 1.6;
+    vertical-align: middle
+}
+
+.u_chkbx:after,.u_chkbx_b:after,.u_chkbx_sub:after {
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+    content: ''
+}
+
+.u_chkbx input[type=checkbox],.u_chkbx_b input[type=checkbox],.u_chkbx_sub input[type=checkbox] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    margin-top: -12px;
+    opacity: 0
+}
+
+.u_chkbx input[type=checkbox]:focus+label .bin,.u_chkbx_b input[type=checkbox]:focus+label .bin,.u_chkbx_sub input[type=checkbox]:focus+label .bin {
+    border: 1px dotted #111
+}
+
+.u_chkbx input[type=checkbox]:checked+label:after,.u_chkbx_b input[type=checkbox]:checked+label:after,.u_chkbx_sub input[type=checkbox]:checked+label:after {
+    background-position: 0 -25px
+}
+
+.u_chkbx input[type=checkbox]:disabled+label:after,.u_chkbx_b input[type=checkbox]:disabled+label:after,.u_chkbx_sub input[type=checkbox]:disabled+label:after {
+    background-position: 0 -75px
+}
+
+.u_chkbx label,.u_chkbx_b label,.u_chkbx_sub label {
+    display: inline-block;
+    color: #111;
+    cursor: pointer;
+    font-size: 1.6rem;
+    vertical-align: middle
+}
+
+.u_chkbx label:after,.u_chkbx_b label:after,.u_chkbx_sub label:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    margin-top: -12px;
+    background-position: 0 0
+}
+
+.u_chkbx label .bin,.u_chkbx_b label .bin,.u_chkbx_sub label .bin {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.wrap_tit {
+    position: relative;
+    height: 3.7rem;
+    padding: .6rem 1.4rem 0;
+    text-align: center
+}
+
+.wrap_tit:after {
+    display: block;
+    clear: both;
+    content: ''
+}

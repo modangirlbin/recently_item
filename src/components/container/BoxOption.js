@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../../css/container/box_optioin.css';
+import '../../css/container/box_optioin.css';
 
-class BannerOption extends Component {
+class BoxOption extends Component {
   render() {
     return (
         <div class="box_option">
@@ -15,4 +15,4 @@ class BannerOption extends Component {
   }
 }
 
-export default BannerOption;
+export default BoxOption;
