@@ -13,22 +13,33 @@ import ItemDefault from './ItemDefault';
 
 // const ItemsTemplate = () => {
 // 요러면 props도 못읽고, this=undefind why?
-class ItemsTemplate extends Component {
-	render() {
-		var data = this.props.data;
-		// console.log(data.conten.ico);
+const ItemsTemplate = ({key, data, idx}) => {
+		const data2 = data.content;
+		let i = 0;
+		console.log(data2);
+
+		let lists2 = [];
+		while(i<data2.length){
+			if (data2[i].type === 'check') {
+				lists2.push(
+					<ItemCheck ico={data2[i].ico}/>
+				);
+			}
+			if (data2[i].type === 'default') {
+				lists2.push(
+					<ItemDefault/>
+				);
+			}
+			i++;
+		}
 		return (
 		<div className="item_lately">
 			<span className="cont_date2">{data.date}</span>
 			<ul className="list_chu_prod">
-				<ItemCheck ico={data.content[data.id].ico}/>
-				<ItemCheck ico={data.content[data.id].ico}/>
-				<ItemDefault/>
-				<ItemDefault/>
+				{lists2}
 			</ul>
 		</div>
 		);
-	}
 };
 
 export default ItemsTemplate;
